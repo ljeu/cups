@@ -25,7 +25,7 @@ RUN useradd \
   --create-home \
   --home-dir=/home/print \
   --shell=/bin/bash \
-  --password='print') \
+  --password=print) \
   print \
 && sed -i '/%sudo[[:space:]]/ s/ALL[[:space:]]*$/NOPASSWD:ALL/' /etc/sudoers
 
