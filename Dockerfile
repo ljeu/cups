@@ -37,5 +37,7 @@ RUN /usr/sbin/cupsd \
   && cupsctl --remote-admin --remote-any --share-printers \
   && kill $(cat /var/run/cups/cupsd.pid)
 
+VOLUME ["/home/print", "/var/run/dbus", "/etc/cups", "/usr/lib/cups", "/usr/share/cups", "/var/spool/cups"]
+
 # Default shell
 CMD ["/usr/sbin/cupsd", "-f"]
