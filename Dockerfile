@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM scratch
 MAINTAINER Laurent
 
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
