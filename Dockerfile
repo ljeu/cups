@@ -1,4 +1,4 @@
-FROM scratch
+FROM debian:latest
 MAINTAINER Laurent
 
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
