@@ -1,8 +1,6 @@
 FROM debian:testing
 MAINTAINER Laurent
 
-VOLUME ["/home/print", "/var/run/dbus", "/etc/cups", "/usr/lib/cups", "/usr/share/cups", "/var/spool/cups"]
-
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
 RUN apt-get update \
 && apt-get install -y \
